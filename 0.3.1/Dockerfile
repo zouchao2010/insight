@@ -21,20 +21,20 @@ RUN npm install -g bitcore-node@1.0.0
 ADD . /opt/insight
 
 #create livenet insight
-RUN cd /opt/insight \
-    && bitcore-node create livenet \
-    && cd livenet \
-    && bitcore-node install insight-api@0.3.1 \
-    && bitcore-node install insight-ui@0.3.0 \
-    && mv node_modules ..
+#RUN cd /opt/insight \
+#    && bitcore-node create livenet \
+#    && cd livenet \
+#    && bitcore-node install insight-api@0.3.1 \
+#    && bitcore-node install insight-ui@0.3.0 \
+#    && mv node_modules ..
 
 #create testnet insight
-RUN cd /opt/insight \
-    && bitcore-node create -t testnet \
-    && cd testnet \
-    && bitcore-node install insight-api@0.3.1 \
-    && bitcore-node install insight-ui@0.3.0 \
-    && rm -f node_modules
+#RUN cd /opt/insight \
+#    && bitcore-node create -t testnet \
+#    && cd testnet \
+#    && bitcore-node install insight-api@0.3.1 \
+#    && bitcore-node install insight-ui@0.3.0 \
+#    && rm -f node_modules
 
 VOLUME /var/lib/insight
 
