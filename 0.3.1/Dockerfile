@@ -28,12 +28,11 @@ RUN bitcore-node create livenet \
     && mv node_modules ..
 
 #create testnet insight
-#RUN cd /opt/insight \
-#    && bitcore-node create -t testnet \
-#    && cd testnet \
-#    && bitcore-node install insight-api@0.3.1 \
-#    && bitcore-node install insight-ui@0.3.0 \
-#    && rm -f node_modules
+RUN bitcore-node create -t testnet \
+    && cd testnet \
+    && bitcore-node install insight-api@0.3.1 \
+    && bitcore-node install insight-ui@0.3.0 \
+    && rm -f node_modules
 
 VOLUME /var/lib/insight
 
