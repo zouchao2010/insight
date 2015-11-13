@@ -32,7 +32,7 @@ RUN bitcore-node create -t testnet \
     && cd testnet \
     && bitcore-node install insight-api@0.3.1 \
     && bitcore-node install insight-ui@0.3.0 \
-    && rm -f node_modules
+    && rm -rf node_modules
 
 VOLUME /var/lib/insight
 
