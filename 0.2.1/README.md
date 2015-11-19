@@ -52,24 +52,9 @@ docker run  --name insight-0.2.1 \
             -e INSIGHT_PUBLIC_PATH=public \
             -e ENABLE_HTTPS=false \
             -e INSIGHT_FORCE_RPC_SYNC=1 \
-            -it zouchao2010/insight:0.2.1 /bin/bash
+            -it zouchao2010/insight:0.2.1
             
 ```
-
-docker run  --name insight-0.2.1 \
-            -h insight-021 \
-            -p 3000:3000 \
-            -p 3001:3001 \
-            -v /data/insight-0.2.1:/var/lib/insight/data \
-            -e BITCOIND_HOST=x.x.x.x \
-            -e BITCOIND_P2P_HOST=x.x.x.x \
-            -e INSIGHT_NETWORK=testnet \
-            -e BITCOIND_USER=user \
-            -e BITCOIND_PASS=pass \
-            -e INSIGHT_PUBLIC_PATH=public \
-            -e ENABLE_HTTPS=false \
-            -e INSIGHT_FORCE_RPC_SYNC=1 \
-            -it node:0.12
 
 ## start|stop|restart(已存在的容器)
 ```shell
