@@ -22,7 +22,7 @@ mkdir -p /data/insight/livenet
 ## run(创建并运行一个容器，退出时删除容器)
 ```shell
 docker run  --name insight-0.3.1 \
-            -h insight-0.3.1 \
+            -h insight-031 \
             -p 3001:3001 \
             -v /data/insight-0.3.1:/var/lib/insight \
             -e TESTNET=1 \
@@ -33,7 +33,7 @@ docker run  --name insight-0.3.1 \
 ## run(创建并运行一个容器，以守护进程方式)
 ```shell
 docker run  --name insight-0.3.1 \
-            -h insight-0.3.1 \
+            -h insight-031 \
             -p 3001:3001 \
             -v /data/insight-0.3.1:/var/lib/insight \
             -e TESTNET=1 \
