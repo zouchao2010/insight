@@ -33,6 +33,8 @@ docker run  --name insight \
 ## run(创建并运行一个容器，以守护进程方式)
 ```shell
 docker run  --name insight \
+            --restart=always \
+            -m 2048m \
             -h insight \
             -p 3001:3001 \
             -v /data/insight:/var/lib/insight \
