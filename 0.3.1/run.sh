@@ -21,5 +21,3 @@ else
     cd /var/lib/insight/testnet
     bitcore-node start
 fi
-
-bash

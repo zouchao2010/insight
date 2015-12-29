@@ -13,7 +13,7 @@ if [ ! -d /var/lib/insight/testnet ]; then
 fi
 
 #run insight
-if [ TESTNET -eq 0 ];
+if [ $TESTNET -eq 0 ];
 then
     cd /var/lib/insight/livenet
     bitcore-node start
@@ -21,5 +21,3 @@ else
     cd /var/lib/insight/testnet
     bitcore-node start
 fi
-
-bash
