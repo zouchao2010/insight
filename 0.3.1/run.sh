@@ -16,8 +16,8 @@ fi
 if [ $TESTNET -eq 0 ];
 then
     cd /var/lib/insight/livenet
-    bitcore-node start
+    bitcore-node start | tee -a livenet.log
 else
     cd /var/lib/insight/testnet
-    bitcore-node start
+    bitcore-node start | tee -a testnet.log
 fi
