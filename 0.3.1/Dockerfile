@@ -12,9 +12,6 @@ RUN apt-get update \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/*
 
-#RUN touch /root/.npmrc \
-#    && echo registry=https://registry.npm.taobao.org >> /root/.npmrc
-
 #install bitcore-node
 RUN npm install -g bitcore-node@1.0.0
 

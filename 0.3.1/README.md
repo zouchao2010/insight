@@ -11,13 +11,6 @@ docker build -t zouchao2010/insight:0.3.1 .
 docker pull zouchao2010/insight:0.3.1
 
 ```
-
-## mkdir(创建DB目录)
-```shell
-mkdir -p /data/insight/testnet
-mkdir -p /data/insight/livenet
-
-```
   
 ## run(创建并运行一个容器，退出时删除容器)
 ```shell
