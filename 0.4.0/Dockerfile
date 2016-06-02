@@ -6,7 +6,7 @@ ENV VERSION 0.4.0
 WORKDIR /opt/insight
 
 RUN apt-get update \
-    && apt-get install -y wget \
+    && apt-get install -y wget libzmq3-dev \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && apt-get autoclean -y \
