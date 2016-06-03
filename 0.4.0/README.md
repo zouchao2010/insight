@@ -15,7 +15,7 @@ docker pull zouchao2010/insight:0.4.0
 ## run(创建并运行一个容器，退出时删除容器)
 ```shell
 docker run  --name insight-0.4.0 \
-            -h insight-032 \
+            -h insight-040 \
             -p 3001:3001 \
             -v /data/insight-0.4.0:/var/lib/insight \
             -e TESTNET=1 \
@@ -28,7 +28,7 @@ docker run  --name insight-0.4.0 \
 docker run  --name insight-0.4.0 \
             --restart=always \
             -m 2048m \
-            -h insight-032 \
+            -h insight-040 \
             -p 3001:3001 \
             -v /data/insight-0.4.0:/var/lib/insight \
             -e TESTNET=1 \
