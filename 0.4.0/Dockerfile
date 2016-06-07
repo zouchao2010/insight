@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:0.12
 
 ENV TESTNET 0
 ENV VERSION 0.4.0
